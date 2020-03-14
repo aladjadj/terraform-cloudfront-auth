@@ -95,7 +95,7 @@ usage: |-
 
     bucket_name                    = "private.example.com"
     region                         = "eu-west-1"
-    cloudfront_acm_certificate_arn = "${data.aws_acm_certificate.example.arn}"
+    cloudfront_acm_certificate_arn = data.aws_acm_certificate.example.arn
   }
 
   data "aws_acm_certificate" "example" {
