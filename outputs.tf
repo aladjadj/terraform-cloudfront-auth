@@ -17,3 +17,9 @@ output "cloudfront_domain_name" {
   description = "Domain Name of the Cloudfront Distribution"
   value       = aws_cloudfront_distribution.default.domain_name
 }
+
+output "cloudfront_hosted_zone_id" {
+  description = "Hosted zone id of the Cloudfront Distribution"
+  value       = aws_cloudfront_distribution.default.hosted_zone_id
+}
+
